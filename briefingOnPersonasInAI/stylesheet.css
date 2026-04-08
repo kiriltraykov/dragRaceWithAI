@@ -1,0 +1,92 @@
+body {
+  margin: 0;
+  position: relative;
+}
+
+body::before {
+  content: "";
+  position: fixed;              /* stays put on scroll */
+  inset: 0;
+  background-image: url("images/wallpaper3.jpeg");
+  background-size: cover;
+  background-position: center;
+  opacity: 0.85;                  /* ← controls paleness */
+  z-index: -1;                   /* behind content */
+}
+
+
+#intro {
+  text-align: center;
+  margin-top: 4vh;
+}
+
+#header {
+  width: 30vw;    
+  height: auto;	
+}
+
+#main {
+  margin-left: 20vw;
+  margin-right: 20vw;
+}
+
+p {
+	font-size: 1.5vw;
+}
+
+#footnote1 {
+  position: fixed;
+  bottom: 0;
+  font-style: italic;
+  font-size: 1vw;
+}
+
+@media (max-width: 768px) {
+
+  /* ---------- TYPOGRAPHY ---------- */
+  p {
+    font-size: 1rem;
+    line-height: 1.6;
+  }
+
+  h1 {
+    font-size: 1.8rem;
+    line-height: 1.3;
+    margin: 1rem 0;
+  }
+
+  h3 {
+    font-size: 1.2rem;
+    line-height: 1.4;
+  }
+
+  sup {
+    font-size: 0.75rem;
+  }
+
+  /* ---------- LAYOUT ---------- */
+  #main {
+    margin-left: 1rem;
+    margin-right: 1rem;
+  }
+
+  #intro {
+    margin-top: 1.5rem;
+    padding: 0 1rem;
+  }
+
+  /* ---------- HEADER IMAGE ---------- */
+  #header {
+    width: 80%;
+    max-width: 320px;
+    height: auto;
+  }
+
+  /* ---------- FOOTNOTE ---------- */
+  #footnote1 {
+    position: static;
+    margin: 2rem 1rem 1rem;
+    font-size: 0.85rem;
+    text-align: center;
+  }
+}
