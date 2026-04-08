@@ -1,0 +1,535 @@
+/*
+	Elisava Font Type
+*/
+
+/* Regular */
+@font-face {
+font-family: 'Elisava Sans';
+src: url('/fonts/ElisavaSans-Regular.otf') format('opentype');
+font-weight: 400;
+font-style: normal;
+}
+
+/* Italic */
+@font-face {
+font-family: 'Elisava Sans';
+src: url('/fonts/ElisavaSans-RegularItalic.otf') format('opentype');
+font-weight: 400;
+font-style: italic;
+}
+
+/* Bold */
+@font-face {
+font-family: 'Elisava Sans';
+src: url('/fonts/ElisavaSans-Bold.otf') format('opentype');
+font-weight: 700;
+font-style: normal;
+}
+
+/* Bold Italic */
+@font-face {
+font-family: 'Elisava Sans';
+src: url('/fonts/ElisavaSans-BoldItalic.otf') format('opentype');
+font-weight: 700;
+font-style: italic;
+}
+
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+	font-family: 'Elisava Sans', sans-serif;
+	margin-left: 5vw;
+	margin-right: 5vw;
+	background-color: #FDEDED;
+}
+
+h1 {
+  margin-bottom: 0;
+}
+
+#headerdiv {
+    display: flex;
+	color: white;
+	background-color: #6E026F; /*#FFFAFA;*/
+	padding: 1vh 2vw;
+	border-style: solid;
+	border-color: #000080;
+	border-radius: 8px;
+}
+
+#raceflags {
+	width: 18vw;
+	height: auto;
+}
+
+#title {
+	text-align: center;
+	width: 50vw;
+}
+
+.wave {
+  display: inline-block;
+  animation: gentlePulse 12s ease-in-out infinite;
+}
+
+@keyframes gentlePulse {
+  0%, 100% {
+    transform: scale(1);
+    color: inherit;
+  }
+  50% {
+    transform: scale(1.3);
+	color: #B500B2;
+  }
+}
+
+#creatorsAndDocs {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 1vh;
+}
+
+#creatorsAndDocs p,
+#creatorsAndDocs a {
+  font-size: clamp(1.1rem, 1.4vw, 1.4rem);
+}
+
+#creatorsAndDocs p {
+  margin: 0;
+  padding: 0.7vh 1vw;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.2s ease, transform 0.2s ease;
+}
+
+#creatorsAndDocs p:hover {
+  background-color: #ffbf00;
+  transform: translateX(4px);
+}
+
+
+#creatorsAndDocs a {
+  margin: 0;
+  padding: 0.7vh 1vw;
+  border-radius: 6px;
+  cursor: pointer;
+  text-decoration: none;     /* removes underline */
+  color: inherit;            /* removes blue */
+  transition: background-color 0.2s ease, transform 0.2s ease;
+  display: inline-block;     /* allows padding */
+}
+
+#creatorsAndDocs a:hover {
+  background-color: #ffbf00;
+  transform: translateX(4px);
+}
+
+#maindiv {
+	display: flex;
+	gap: 8vw;
+}
+
+#leftdiv {
+	 flex: 0 0 32.5vw;   /* grow=0, shrink=0, basis=30vw */
+}
+
+#allepisodes {
+	margin-top: 0;
+	display: flex;
+    flex-direction: column;
+	gap: 1.75vh;
+}
+
+.episode {
+  background-color: #FFF8DC;
+  border: 2px solid rgba(0, 0, 0, 0.5); /* light academic border */
+  border-color: #000080;
+  border-radius: 8px;
+  padding: 2vh 2vw;
+  display: flex;
+  flex-direction: column;
+  gap: 1.0vh;
+  cursor: pointer;
+  transition: background-color 0.2s ease, transform 0.2s ease;
+}
+
+.episode:hover {
+  transform: translateY(-4px);
+  background-color: #ffbf00;
+  }
+  
+.episode.selected {
+  background-color: #ffbf00;
+}
+
+.episode p {
+	margin: 0;
+}
+
+.episode p:first-child {
+  font-weight: 600;
+}
+
+#rightdiv {
+  flex: 1 1 auto;   /* take remaining space */
+  min-width: 0;     /* important: allow it to shrink instead of pushing */
+
+}
+
+#initialNote {
+  background-color: #FFF8DC; /*#FFF8DC;*/ /*#FFE08F;*/
+  border: 2px solid rgba(0, 0, 0, 0.5); /* light academic border */
+  border-color: #000080;
+  border-radius: 8px;
+  padding: 2vh 2vw;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5vh;	
+}
+
+#initialNote p {
+	margin-bottom: 0;
+	margin-top: 1.5vh;
+}
+
+#podcastdiv {
+  background-color: #FFF8DC; /*#FFF8DC;*/ /*#FFE08F;*/
+  border: 2px solid rgba(0, 0, 0, 0.5); /* light academic border */
+  border-color: #000080;
+  border-radius: 8px;
+  padding: 2vh 2vw;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5vh;	
+}
+
+.queenIsSpeaking {
+  text-align: center;
+  color: #6E026F;
+}
+
+#whichQueenIsSpeaking {
+  font-size: 1.75vw;
+  font-weight: 600;        
+  margin: 0;               /* prevents layout jump */
+  transition: opacity 0.25s ease, color 0.25s ease;
+}
+
+.player { 
+  width: 100%; 
+}
+
+#showQueenCheatSheet, #showQueenRankings, #backtopodcast, #backtopodcast2, #backtopodcast3 {
+  font-size: 1.25vw;
+  padding: 8px 16px;
+  border-radius: 50px;
+  background-color: white;
+  cursor: pointer;
+}
+
+#showQueenCheatSheet, #showQueenRankings {
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+
+#backtopodcast, #backtopodcast2, #backtopodcast3 {
+	margin-bottom: 0;
+	margin-top: 20px;
+	background-color: #ffbf00;
+}
+
+#showQueenCheatSheet:hover, #showQueenRankings:hover {
+    background-color: #ffbf00;
+	transition: background-color 0.25s ease;
+}
+
+#backtopodcast:hover, #backtopodcast2:hover, #backtopodcast3:hover {
+    background-color: #FFF8DC;
+	transition: background-color 0.25s ease;
+}
+
+#infoOnResearch {
+	margin-top:0;
+}
+
+#vvnames, #strikethroughnames, #newnames, #rateaqueen  {
+	width: 42vw;
+	height: auto;
+}
+
+#disclaimer {
+	margin-top: 0;
+    font-size: 0.85em;
+}
+
+#redItalics {
+	color: red;
+}
+
+#bios {
+  display: flex;
+  flex-direction: column;
+  gap: 1vh;
+}
+
+.bioRow {
+  display: grid;
+  grid-template-columns: auto 1fr; /* image | text */
+  gap: 2vw;
+  align-items: start;
+}
+
+.bioPics {
+  width: 16.5vw;
+  max-width: 200px;
+  height: auto;
+  border-radius: 8px; /* optional */
+}
+
+/* This keeps paragraph + LinkedIn stacked */
+.bioText {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.bioText p:first-child {
+  margin-top: 0;
+}
+
+.linkedInLink {
+  align-self: flex-start;
+  text-decoration: none;
+  background-color: #6E026F;
+  color: white;
+  padding: 0.5vh 1vw;
+  border-radius: 999px;
+  font-weight: 600;
+  transition: transform 0.2s ease, background-color 0.2s ease;
+  margin-top: auto;
+}
+
+.linkedInLink:hover {
+  transform: translateY(-2px);
+  background-color: #ffbf00;
+}
+	
+#wordArt {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* 3 per row */
+  gap: 3vw;                              /* spacing between tiles */
+  margin-top: 2vh;
+}
+
+.wordArtPics {
+  width: 100%;     /* fill the tile */
+  height: auto;
+  display: block;
+  border: 3px solid #6E026F;
+}
+
+
+#footnote1 {
+  position: relative;
+  bottom: 0;
+  left: 0;
+  font-style: italic;
+  font-size: 1vw;
+}
+
+/* =========================
+   MOBILE-FIRST BASELINE
+   ========================= */
+
+body {
+  margin-left: 4vw;
+  margin-right: 4vw;
+}
+
+/* Prevent horizontal scroll */
+html, body {
+  overflow-x: hidden;
+}
+
+/* Global typography */
+h1 {
+  font-size: clamp(1.6rem, 6vw, 2.5rem);
+}
+
+h3 {
+  font-size: clamp(1.1rem, 4vw, 1.5rem);
+}
+
+p {
+  font-size: clamp(0.95rem, 4vw, 1.1rem);
+  line-height: normal;
+}
+
+
+/* =========================
+   MOBILE LAYOUT (≤ 768px)
+   ========================= */
+
+@media (max-width: 768px) {
+
+  /* ---------- Header ---------- */
+
+  #headerdiv {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 1vh;
+  }
+
+  #raceflags {
+    width: 40vw;
+    max-width: 160px;
+  }
+
+  #title {
+    width: 100%;
+  }
+
+  #creatorsAndDocs {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2vw;
+  }
+
+  #creatorsAndDocs p,
+  #creatorsAndDocs a {
+    font-size: 1rem;
+  }
+  
+  #documentHub p {
+  	font-size: 0.85rem;
+	line-height: 1.6;
+  }
+
+  /* ---------- Main Layout ---------- */
+
+  #maindiv {
+    display: flex;
+    flex-direction: column;
+    gap: 3vh;
+  }
+
+  #rightdiv {
+    order: -1;
+    width: 100%;
+  }
+
+  #leftdiv {
+    width: 100%;
+  }
+
+
+  /* ---------- Episodes ---------- */
+
+  .episode {
+    padding: 2.5vh 4vw;
+  }
+
+  .episode p:first-child {
+    font-size: 1.05rem;
+  }
+
+  .episode p:nth-child(2) {
+    font-size: 0.95rem;
+  }
+
+
+  /* ---------- Audio / Subtitles ---------- */
+
+  .player {
+    width: 100%;
+  }
+
+  .queenIsSpeaking {
+    margin-top: 1.5vh;
+  }
+
+  #whichQueenIsSpeaking {
+    font-size: clamp(1rem, 4vw, 1.15rem);
+  }
+
+  #panel4Subtitles {
+    font-size: clamp(0.95rem, 3.5vw, 1.05rem);
+    margin-top: 1vh;
+  }
+
+
+  /* ---------- Images & Tables ---------- */
+
+  #vvnames,
+  #strikethroughnames,
+  #newnames,
+  #rateaqueen {
+    width: 100%;
+  }
+
+  #wordArt {
+    grid-template-columns: 1fr;
+    gap: 4vh;
+  }
+
+
+  /* ---------- About the Creators ---------- */
+
+  #aboutTheCreators {
+    text-align: center;
+  }
+
+  .bioRow {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .bioPics {
+    width: 60vw;
+    margin: 0 auto 1.5vh;
+  }
+
+  .bioText {
+    width: 100%;
+    text-align: left;
+    align-items: stretch;
+  }
+
+  .linkedInLink {
+    align-self: center;
+  }
+
+  /* Ensure acknowledgements read as normal text */
+  #aboutTheCreators h3 + p {
+    text-align: left;
+  }
+
+
+  /* ---------- Buttons ---------- */
+
+  #showQueenCheatSheet,
+  #showQueenRankings,
+  #backtopodcast,
+  #backtopodcast2,
+  #backtopodcast3 {
+    width: 100%;
+    font-size: 1rem;
+    padding: 12px 20px;
+  }
+
+
+  /* ---------- Footnote ---------- */
+
+  #footnote1 {
+    font-size: 0.85rem;
+    text-align: center;
+    margin-top: 2vh;
+  }
+}
