@@ -68,6 +68,7 @@ const varNova11 = "I’m Nova Knockout, baby, born loud, not shy,<br>From Barcel
 const varNova12 = "No heels on the runway, just my words in your veins,<br>I’m the storm in your speakers, the glitter in your brains.<br>Now others bring the glamour, but I bring the shock,<br>A storyline assassin with a mouth that won’t lock.";
 const varNova13 = "I'm broke with big plans and a billionaire tongue,<br>Turning trauma into punchlines, pain into fun.<br>If charisma’s a currency, I’m rich on this track,<br>‘Cause when Nova hits the mic, there’s no going back.";
 
+const varNovaRateAQueen = "Her verse had bite and her AI sketch was unhinged chaos.<br>Zero chill, all threat — I'd pay to watch her implode the finale."
 
 	$('#initialNote').show();
 	$('#aboutTheCreators, #documentHub').hide();
@@ -129,7 +130,8 @@ const varNova13 = "I'm broke with big plans and a billionaire tongue,<br>Turning
 		    $('#wordArtSection').hide();
 		    
 		 		$('#showQueenCheatSheet').off('click').on('click', function(){
-		     			    $('#vvnames').show();
+		     			    $('#showQueenCheatSheet').hide();
+					        $('#vvnames').show();
 						   	$('#strikethroughnames').hide();
 						    $('#newnames').hide();
 						    $('#rateaqueen').hide();
@@ -162,7 +164,7 @@ const varNova13 = "I'm broke with big plans and a billionaire tongue,<br>Turning
 		    $('#wordArtSection').hide();
 		    
 		 		$('#showQueenCheatSheet').off('click').on('click', function(){
-		   			        $('#vvnames').hide();
+		   			        $('#showQueenCheatSheet').hide();$('#vvnames').hide();
 						   	$('#strikethroughnames').show();
 						    $('#newnames').hide();
 						    $('#rateaqueen').hide();
@@ -194,7 +196,8 @@ const varNova13 = "I'm broke with big plans and a billionaire tongue,<br>Turning
 		    $('#wordArtSection').hide();
 		    
 		 		$('#showQueenCheatSheet').off('click').on('click', function(){
-		     	            $('#vvnames').hide();
+		     	            $('#showQueenCheatSheet').hide();
+					        $('#vvnames').hide();
 						   	$('#strikethroughnames').hide();
 						    $('#newnames').show();
 						    $('#rateaqueen').hide(); 
@@ -226,7 +229,8 @@ const varNova13 = "I'm broke with big plans and a billionaire tongue,<br>Turning
 		    $('#wordArtSection').hide();
 		    
 		 		$('#showQueenCheatSheet').off('click').on('click', function(){
-		                    $('#vvnames').hide();
+		                    $('#showQueenCheatSheet').hide();
+					        $('#vvnames').hide();
 						   	$('#strikethroughnames').hide();
 						    $('#newnames').show();
 						    $('#rateaqueen').hide();  
@@ -258,7 +262,8 @@ const varNova13 = "I'm broke with big plans and a billionaire tongue,<br>Turning
 		    $('#wordArtSection').hide();
 		    
 		 		$('#showQueenCheatSheet').off('click').on('click', function(){
-		                    $('#vvnames').hide();
+		                    $('#showQueenCheatSheet').hide();
+					        $('#vvnames').hide();
 						   	$('#strikethroughnames').hide();
 						    $('#newnames').show();
 						    $('#rateaqueen').hide();  
@@ -291,7 +296,8 @@ const varNova13 = "I'm broke with big plans and a billionaire tongue,<br>Turning
 		    $('#wordArtSection').hide();
 		
 				$('#showQueenRankings').off('click').on('click', function(){
-		                    $('#vvnames').hide();
+		                    $('#showQueenRankings').hide();
+					        $('#vvnames').hide();
 						   	$('#strikethroughnames').hide();
 						    $('#newnames').hide();
 						    $('#rateaqueen').show(); 	 
@@ -324,7 +330,8 @@ const varNova13 = "I'm broke with big plans and a billionaire tongue,<br>Turning
 		    $('#wordArtSection').hide();
 		
 			      $('#showQueenCheatSheet').off('click').on('click', function(){
-		                    $('#vvnames').hide();
+		                    $('#showQueenCheatSheet').hide();
+					        $('#vvnames').hide();
 						   	$('#strikethroughnames').hide();
 						    $('#newnames').show();
 						    $('#rateaqueen').hide(); 	 
@@ -559,6 +566,10 @@ const PANEL4_SUBTITLES = [
   // narrator gaps = no entries
 ];
 
+const PANEL7_SUBTITLES = [
+  { from: "2:28", to: "2:39", speaker: var6, subtitle: varNovaRateAQueen }
+ ];
+
 (function wirePanel4() {
   const audio = $('#panel4 audio.player').get(0);
   if (!audio) return;
@@ -590,6 +601,41 @@ const PANEL4_SUBTITLES = [
   $(audio).on('pause ended', () => { active = -1; clearText(); });
 })();
 
+/* ===============================
+   PANEL 7 — speaker + subtitles
+   =============================== */
+
+(function wirePanel7() {
+  const audio = $('#panel7 audio.player').get(0);
+  if (!audio) return;
+
+  const segs = PANEL7_SUBTITLES.map(s => ({
+    start: toSeconds(s.from),
+    end: toSeconds(s.to),
+    speaker: s.speaker,
+    subtitle: s.subtitle
+  }));
+
+  let active = -1;
+
+  function apply(t) {
+    const idx = segs.findIndex(s => t >= s.start && t < s.end);
+    if (idx !== active) {
+      active = idx;
+      if (idx === -1) {
+        clearText();
+      } else {
+        setSpeaker(segs[idx].speaker);
+        setSubtitle(segs[idx].subtitle);
+      }
+    }
+  }
+
+  $(audio).on('timeupdate', () => apply(audio.currentTime));
+  $(audio).on('play', () => apply(audio.currentTime));
+  $(audio).on('pause ended', () => { active = -1; clearText(); });
+})();
+``
 /* ===============================
    Global safety: one audio at a time
    =============================== */

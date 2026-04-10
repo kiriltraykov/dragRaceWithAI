@@ -106,12 +106,6 @@ h1 {
   transition: background-color 0.2s ease, transform 0.2s ease;
 }
 
-#creatorsAndDocs p:hover {
-  background-color: #ffbf00;
-  transform: translateX(4px);
-}
-
-
 #creatorsAndDocs a {
   margin: 0;
   padding: 0.7vh 1vw;
@@ -123,9 +117,24 @@ h1 {
   display: inline-block;     /* allows padding */
 }
 
-#creatorsAndDocs a:hover {
+
+/* PSEUDO-BUTTON FOCUS CLEANUP */
+#creatorsAndDocs p:focus,
+#creatorsAndDocs p:focus-visible {
+  background-color: transparent;
+  outline: none;
+}
+
+#creatorsAndDocs p:active {
   background-color: #ffbf00;
-  transform: translateX(4px);
+}
+
+@media (hover: hover) and (pointer: fine) {
+  #creatorsAndDocs p:hover,
+  #creatorsAndDocs a:hover {
+    background-color: #ffbf00;
+    transform: translateY(-5px);
+  }
 }
 
 #maindiv {
@@ -157,10 +166,13 @@ h1 {
   transition: background-color 0.2s ease, transform 0.2s ease;
 }
 
-.episode:hover {
-  transform: translateY(-4px);
-  background-color: #ffbf00;
+
+@media (hover: hover) and (pointer: fine) {
+  .episode:hover {
+    transform: translateY(-4px);
+    background-color: #ffbf00;
   }
+}
   
 .episode.selected {
   background-color: #ffbf00;
@@ -191,9 +203,8 @@ h1 {
   gap: 1.5vh;	
 }
 
-#initialNote p {
+#firstp, #secondp {
 	margin-bottom: 0;
-	margin-top: 1.5vh;
 }
 
 #podcastdiv {
@@ -224,7 +235,9 @@ h1 {
 }
 
 #showQueenCheatSheet, #showQueenRankings, #backtopodcast, #backtopodcast2, #backtopodcast3 {
-  font-size: 1.25vw;
+  -webkit-appearance: none;
+  appearance: none;
+  border: 2px solid #000;
   padding: 8px 16px;
   border-radius: 50px;
   background-color: white;
@@ -306,7 +319,7 @@ h1 {
   text-decoration: none;
   background-color: #6E026F;
   color: white;
-  padding: 0.5vh 1vw;
+  padding: 0.5vh 1.6em;
   border-radius: 999px;
   font-weight: 600;
   transition: transform 0.2s ease, background-color 0.2s ease;
@@ -361,11 +374,11 @@ h1 {
 }
 
 h3 {
-  font-size: clamp(1.1rem, 4vw, 1.5rem);
+  font-size: clamp(1.2rem, 4vw, 1.5rem);
 }
 
 p {
-  font-size: clamp(0.95rem, 4vw, 1.1rem);
+  font-size: clamp(1.1rem, 4vw, 1.2rem);
   line-height: normal;
 }
 
@@ -393,6 +406,10 @@ p {
   #title {
     width: 100%;
   }
+  
+#startTokensHeadline .mobileBreak {
+    display: block;
+  }
 
   #creatorsAndDocs {
     flex-direction: row;
@@ -403,11 +420,10 @@ p {
 
   #creatorsAndDocs p,
   #creatorsAndDocs a {
-    font-size: 1rem;
+    font-size: 1.1rem;
   }
   
   #documentHub p {
-  	font-size: 0.85rem;
 	line-height: 1.6;
   }
 
@@ -436,11 +452,11 @@ p {
   }
 
   .episode p:first-child {
-    font-size: 1.05rem;
+    font-size: 1.2rem;
   }
 
   .episode p:nth-child(2) {
-    font-size: 0.95rem;
+    font-size: 1.1rem;
   }
 
 
@@ -455,11 +471,11 @@ p {
   }
 
   #whichQueenIsSpeaking {
-    font-size: clamp(1rem, 4vw, 1.15rem);
+    font-size: clamp(1.1rem, 4vw, 1.3rem);
   }
 
   #panel4Subtitles {
-    font-size: clamp(0.95rem, 3.5vw, 1.05rem);
+    font-size: clamp(1rem, 4vw, 1.15rem);
     margin-top: 1vh;
   }
 
@@ -515,13 +531,23 @@ p {
   /* ---------- Buttons ---------- */
 
   #showQueenCheatSheet,
-  #showQueenRankings,
+  #showQueenRankings
+   {
+    width: 100%;
+    font-size: clamp(0.8rem, 4vw, 0.9rem);
+    padding: 12px 20px;
+	color: #000;
+    text-decoration: none;
+  }
+  
   #backtopodcast,
   #backtopodcast2,
   #backtopodcast3 {
     width: 100%;
-    font-size: 1rem;
+    font-size: clamp(1rem, 4vw, 1.1rem);
     padding: 12px 20px;
+	color: #000;
+    text-decoration: none;
   }
 
 

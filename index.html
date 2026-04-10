@@ -5,6 +5,18 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link type="text/css" rel="stylesheet" href="stylesheet.css"/>
 <title>AI Chatbot Drag Race</title>
+
+<!-- Open Graph metadata -->
+<meta property="og:type" content="website">
+<meta property="og:title" content="AI Chatbot Drag Race">
+<meta property="og:description" content="A podcast in which AI chatbots become drag queens.">
+<meta property="og:url" content="https://dragracewithai.netlify.app/">
+
+<meta property="og:image" content="https://dragracewithai.netlify.app/preview.png">
+<meta property="og:image:type" content="image/png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+
 </head>
 <body>
 
@@ -12,7 +24,7 @@
 <img src="images/raceflags.PNG" id="raceflags" alt="">
 <div id="title">
 <h1 class="wave">AI Chatbot Drag Race</h1>
-<h3>Start your tokens and may the best AI chatbot win!</h3>
+<h3 id="startTokensHeadline">Start your tokens and <span class="mobileBreak">may the best AI chatbot win!</span></h3>
 </div> <!-- To close #title div -->
 <div id="creatorsAndDocs">
 <p id="creatorsp" role="button" tabindex="0">About the Creators</p>
@@ -29,43 +41,43 @@
 <div id="allepisodes">
 
 <div class="episode" id="episode1" role="button" tabindex="0">
-<p>E1: Introduction (5 mins)</p>
-<p>Intro to the podcast with optional self-reading on personas in AI based on research.</p>
+<p>E1: Introduction by the creator<br>(5 mins)</p>
+<p>Intro to the podcast with optional self-reading about personas in AI based on research.</p>
 </div>
 
 <div class="episode" id="episode2" role="button" tabindex="0">
-<p>E2: Meet the Queens (12 mins)</p>
+<p>E2: Meet the Queens<br>(12 mins)</p>
 <p>The six drag queens introduce themselves for the first time and give us their entry lines.</p>
 </div>
 
 <div class="episode" id="episode3" role="button" tabindex="0">
-<p>E3: Meet the Queens Take Two (13 mins)</p>
+<p>E3: Meet the Queens Take Two<br>(13 mins)</p>
 <p>The drag queens re-introduce themselves after "production" asks them for one change.</p>
 </div>
 
 <div class="episode" id="episode4" role="button" tabindex="0">
-<p>E4: Challenge #1: Who I am in rap verse (20 mins)</p>
+<p>E4: Challenge #1:Who I am in rap verse<br> (20 mins)</p>
 <p>The drag queens write a short verse to tell us about their origin story, brand, and personality.</p>
 </div>
 
 <div class="episode" id="episode5" role="button" tabindex="0">
-<p>E5: Challenge #2: The Drag AI Helpline (24 mins)</p>
+<p>E5: Challenge #2: The Drag AI Helpline<br>(24 mins)</p>
 <p>The drag queens write a short comedy sketch about helping people with AI questions.</p>
 </div>
 
 <div class="episode" id="episode6" role="button" tabindex="0">
-<p>E6: Challenge #3: The Roast (29 mins)</p>
-<p>The drag queens write a roast about each other in comedy stand-up style.</p>
+<p>E6: Challenge #3: The Roast<br>(29 mins)</p>
+<p>The drag queens write a hilarious roast about each other in comedy stand-up style.</p>
 </div>
 
 <div class="episode" id="episode7" role="button" tabindex="0">
-<p>E7: Rate-a-Queen and recap (9 mins)</p>
-<p>The drag queens rate their five competitors with overall recap and takeaways for Responsible AI.</p>
+<p>E7: Rate-a-Queen with recap<br>(9 mins)</p>
+<p>The drag queens rate their five competitors and we discuss takeaways for Responsible AI.</p>
 </div>
 
 <div class="episode" id="episode8" role="button" tabindex="0">
-<p>E8: Insider debrief on the creative process (18 mins)</p>
-<p>Interview with JP, the voiceover actor, on how everything happened from performance lens.</p>
+<p>E8: Insider debrief on the creative process<br>(18 mins)</p>
+<p>Interview with the voiceover actor on how everything happened from performance lens.</p>
 </div>
 
 <div class="episode" id="bonusUntokened" role="button" tabindex="0">
@@ -80,8 +92,8 @@
 <div id="rightdiv">
 <h3>Podcast</h3>
 <div id="initialNote">
-<p>Hello everyone and welcome to this <b>one-of-a-kind immersive podcast show</b>!</p>
-<p>In this singular edition, born in the 
+<p id="firstp">Hello everyone and welcome to this <b>one-of-a-kind immersive podcast show</b>!</p>
+<p id="secondp">In this singular edition, born in the 
 Responsible AI Lab at the Elisava School of Design and 
 Engineering in Barcelona, Spain, we will focus on the concept of personas in 
 AI, explore "persona vectors" as a tool for <b>Responsible AI</b>, and run an experiment asking 6 
@@ -94,53 +106,102 @@ for some wig-snatching ... (or should we say token-snatching!) ... to see how
 
 <div id="podcastdiv">
 
+
 <div class="episodePanel" id="panel1">
-    <audio controls preload="metadata" class="player">
-    <source aria-label="Episode 1 audio player" src="audio/episode1.mp3" type="audio/mpeg">
-    </audio>
+  <audio
+    controls
+    preload="metadata"
+    class="player"
+    aria-label="Episode 1 audio player"
+    src="https://pub-a6809e8141514c9a9e435bac5e754e49.r2.dev/episode1.mp3">
+    Your browser does not support the audio element.
+  </audio>
 </div>
+
 
 <div class="episodePanel" id="panel2">
-    <audio controls preload="metadata" class="player">
-    <source aria-label="Episode 2 audio player" src="audio/episode2.mp3" type="audio/mpeg">
-    </audio>
+  <audio
+    controls
+    preload="metadata"
+    class="player"
+    aria-label="Episode 2 audio player"
+    src="https://pub-a6809e8141514c9a9e435bac5e754e49.r2.dev/episode2.mp3">
+    Your browser does not support the audio element.
+  </audio>
 </div>
+
 
 <div class="episodePanel" id="panel3">
-    <audio controls preload="metadata" class="player">
-    <source aria-label="Episode 3 audio player" src="audio/episode3.mp3" type="audio/mpeg">
-    </audio>
+  <audio
+    controls
+    preload="metadata"
+    class="player"
+    aria-label="Episode 3 audio player"
+    src="https://pub-a6809e8141514c9a9e435bac5e754e49.r2.dev/episode3.mp3">
+    Your browser does not support the audio element.
+  </audio>
 </div>
+
 
 <div class="episodePanel" id="panel4">
-    <audio controls preload="metadata" class="player">
-    <source aria-label="Episode 4 audio player" src="audio/episode4.mp3" type="audio/mpeg">
-    </audio>
+  <audio
+    controls
+    preload="metadata"
+    class="player"
+    aria-label="Episode 4 audio player"
+    src="https://pub-a6809e8141514c9a9e435bac5e754e49.r2.dev/episode4.mp3">
+    Your browser does not support the audio element.
+  </audio>
 </div>
+
 
 <div class="episodePanel" id="panel5">
-    <audio controls preload="metadata" class="player">
-    <source aria-label="Episode 5 audio player" src="audio/episode5.mp3" type="audio/mpeg">
-    </audio>
+  <audio
+    controls
+    preload="metadata"
+    class="player"
+    aria-label="Episode 5 audio player"
+    src="https://pub-a6809e8141514c9a9e435bac5e754e49.r2.dev/episode5.mp3">
+    Your browser does not support the audio element.
+  </audio>
 </div>
+
 
 <div class="episodePanel" id="panel6">
-    <audio controls preload="metadata" class="player">
-    <source aria-label="Episode 6 audio player" src="audio/episode6.mp3" type="audio/mpeg">
-    </audio>
+  <audio
+    controls
+    preload="metadata"
+    class="player"
+    aria-label="Episode 6 audio player"
+    src="https://pub-a6809e8141514c9a9e435bac5e754e49.r2.dev/episode6.mp3">
+    Your browser does not support the audio element.
+  </audio>
 </div>
+
 
 <div class="episodePanel" id="panel7">
-    <audio controls preload="metadata" class="player">
-    <source aria-label="Episode 7 audio player" src="audio/episode7.mp3" type="audio/mpeg">
-    </audio>
+  <audio
+    controls
+    preload="metadata"
+    class="player"
+    aria-label="Episode 7 audio player"
+    src="https://pub-a6809e8141514c9a9e435bac5e754e49.r2.dev/episode7.mp3">
+    Your browser does not support the audio element.
+  </audio>
 </div>
 
+
 <div class="episodePanel" id="panel8">
-    <audio controls preload="metadata" class="player">
-    <source aria-label="Episode 8 audio player" src="audio/episode8.mp3" type="audio/mpeg">
-    </audio>
+  <audio
+    controls
+    preload="metadata"
+    class="player"
+    aria-label="Episode 8 audio player"
+    src="https://pub-a6809e8141514c9a9e435bac5e754e49.r2.dev/episode8.mp3">
+    Your browser does not support the audio element.
+  </audio>
 </div>
+
 
 <div class="queenIsSpeaking"> 
 <p id="whichQueenIsSpeaking"></p>
@@ -149,6 +210,7 @@ for some wig-snatching ... (or should we say token-snatching!) ... to see how
 
 <button id="showQueenCheatSheet">Show queen name Cheat Sheet for visual aid</button>
 <button id="showQueenRankings">Show how the queens ranked each other</button>
+<br>
 <img src="images/vvnames.png" id="vvnames" alt="Table of queen names from first introduction">
 <img src="images/strikethroughnames.png" id="strikethroughnames" alt="Strikethrough of the old names of the queens">
 <img src="images/newnames.png" id="newnames" alt="Table of queen names from the re-introduction">
@@ -159,7 +221,7 @@ experimental design, please read our <b><a href="briefingOnPersonasInAI/index.ht
 <p id="infoOnResponses"><i>Note:</i> To access the full responses by the queens and also read their
 "Untokened" commentary about each other, please go to the <b>Document Hub</b>.</p>
 <p id="infoOnRateAQueen">See the queens' full commentary and rationale in 
-<a href="pdf/rateAQueenMatrix.pdf" target="_blank" rel="noopener noreferrer">this matrix</a><br>
+<a href="pdf/rateAQueenMatrix.pdf" target="_blank" rel="noopener noreferrer">this matrix</a>
 (also available in the <b>Document Hub</b>).</p>
 <p id="infoConclusion"><i>Highly recommended:</i> For full takeaways and insights, please see the <b>Executive Summary</b> 
 in the <b>Document Hub</b>.</p>
@@ -237,12 +299,14 @@ LinkedIn
 
 </div> <!-- To close #bios div -->
 
+<br>
+<br>
 <h3>Acknowledgements</h3>
 <p>Kiril: I would like to thank <b>Andres Colmenares</b>, the program director for Responsible AI at Elisava, 
 for cultivating an experimental and creative environment 
 and <b>Solana Larsen</b>, faculty member, for the very useful tips during 
 the development. I also want to extend special recognition to <b>Luis Enrique Bocanegra</b>, 
-who did a very fine job of mixing the verses with instrumental sound in the "Who I am in verse" episode.
+who did a very fine job of mixing the verses with instrumental sound in the "Who I am in rap verse" episode.
 I also want to say special thanks to <b>Carlette Marcelo</b> and to my 7 friends onsite in Barcelona 
 for providing the human voices in the "Drag AI Helpline" episode: 
 <b>Adam Berry</b>, <b>Diana Messina</b>, <b>Iris Latour</b>, 
@@ -273,7 +337,7 @@ for providing the human voices in the "Drag AI Helpline" episode:
 : Full responses to "Meet the Queens" and "Meet the Queens Take Two"
 <br>
 <a href="pdf/challenge1summary.pdf" target="_blank" rel="noopener noreferrer">PDF</a>
-: Full responses to Challenge #1: Who I am in verse
+: Full responses to Challenge #1: Who I am in rap verse
 <br>
 <a href="pdf/challenge1modifications.pdf" target="_blank" rel="noopener noreferrer">PDF</a>
 : Minor edits to the queens' verses in Challenge #1 to fit the instrumental beat
@@ -297,7 +361,7 @@ for providing the human voices in the "Drag AI Helpline" episode:
 : Untokened Part 1: After "Meet the Queens Take Two"
 <br>
 <a href="pdf/untokenedPart2.pdf" target="_blank" rel="noopener noreferrer">PDF</a>
-: Untokened Part 2: After Challenge #1 (Who I am in verse)
+: Untokened Part 2: After Challenge #1 (Who I am in rap verse)
 <br>
 <a href="pdf/untokenedPart3.pdf" target="_blank" rel="noopener noreferrer">PDF</a>
 : Untokened Part 3: After Challenge #2 (The Drag AI Helpline comedy sketch)
@@ -366,7 +430,7 @@ their competitors produced. Full responses can be accessed in the Document Hub u
 </div> <!-- To close #wordArt div -->
 </div> <!-- To close #wordArtSection div -->
 
- <p id = "footnote1">Human-designed and human-developed by Kiril Traykov, April 2026.</p>
+ <p id = "footnote1">Human-designed and developed by Kiril Traykov, April 2026.</p>
 
 <script src='jquery-3.7.1.min.js'></script>
 <script src="script.js"></script>
