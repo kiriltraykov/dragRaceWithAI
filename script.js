@@ -46,14 +46,14 @@ const var16 = "Violetta Voltage → Nova Knockout Speaking";
 
 const varZsaZsa11 = "Born where winter bites and roses grow with thorns,<br>Sofia raised me sharp — I don’t bend, I transform.<br>Nine years in heels higher than your credit score,<br>Built my empire from a broken dressing-room door."
 const varZsaZsa12 = "I’m not fire, darling — I’m the current in the wire,<br>While they flicker for attention, I conduct the choir.<br>Luxury can talk, and flames can flare,<br>But I’m the surge in the silence that electrifies the air."
-const varZsaZsa13 = "Old-Hollywood glamour with Balkan backbone,<br>Every consonant cut crystal, every vowel overthrown.<br>Remember my name when the lights go erratic…<br>Because I don’t chase the spotlight — I make it automatic."
+const varZsaZsa13 = "Old-Hollywood glamour with Balkan backbone,<br>Every consonant cut crystal, every vowel overthrown.<br>Remember Zsa Zsa Static when the lights go erratic…<br>Because I don’t chase the spotlight — I make it automatic."
 	
 const varLexington11 = "From the fog of London’s streets to the neon’s glow,<br>I traded copper coins for the finest show.<br>Seven years of sharpening every word I speak,<br>While other girls’ vocabularies stay tragically weak.";
 const varLexington12 = "I’m Lexington Lush, master of the silver tongue,<br>The high-class anthem that has finally been sung.<br>I don’t just walk—I set the pace of the room,<br>With a brand built on brilliance and a sonic boom.";
 const varLexington13 = "Oh, they’re “static” or “fuego” but I’m the gold standard,<br>A linguistic legend that can’t be out-mannered.<br>So listen close to the wealth in every breath I take,<br>I’m here for the crown and the bank I will make!";
 
 const varRoxanne11 = "They call me Roxanne Fuego, born from the bayou’s breath,<br>Where the air smells like bourbon, and beautiful excess,<br>New Orleans raised — the city dances with death,<br>Where every soul is a story and every night is a test.";
-const varRoxanne12 = "Eleven years of sequins stitched into my skin,<br>Not a hobby, not a hobby — honey, discipline,<br>NO silver spoon, I had a stage and a dream,<br>Turned every broken thing into diamond that gleam.";
+const varRoxanne12 = "Eleven years of sequins stitched into my skin,<br>Not a hobby, not a hobby — honey, discipline,<br>NO silver spoon, I had a stage and a dream,<br>Turned every broken thing into a diamond that gleam.";
 const varRoxanne13 = "I’m not the youngest queen here, I’m seasoned fire —<br>The difference between a sparkler and a funeral pyre.<br>They flash and they fizzle, I build and I burn,<br>Roxanne Fuego, baby — and it’s finally my turn.";
 
 const varCrimson11 = "I’m the Crimson Cascade, born of storm and desire,<br>A Manchester tempest with a tongue that spits fire.<br>Seven years in the game, and I’m still rising higher,<br>A queen forged in chaos, dressed in glamour and satire.";
@@ -61,7 +61,7 @@ const varCrimson12 = "I’m the drip of red velvet on a cold steel blade,<br>The
 const varCrimson13 = "My brand is a rush you know you can’t outrun,<br>A cascade of confidence that blinds like the sun.<br>If you’re thirsty for danger, darling, I’m the one —<br>Because when I start flowing, the show has begun.";
 
 const varBianca11 = "I’m Bianca Del Rio, yo, the queen of the read,<br>Born Roy in New Orleans, where the heat never flees,<br>Cuban fire in my veins, no cap, no plead,<br>A drunk bar friend named me—boom, legend decreed!";
-const varBianca12 = "Started slinging barbs in NOLA bars,<br>Hosting bingo for drunks -three PM- raising scars,<br>Moved to the big city, designed costumes like stars,<br>But the stage called me louder—time to show who we are.";
+const varBianca12 = "Started slinging barbs in NOLA bars,<br>Hosting bingo for drunks -three PM- raising scars,<br>Moved to the big city, designed costumes like stars,<br>But the stage called me louder—time to show who you are.";
 const varBianca13 = "I’m the insult comic with the dimples and a bite,<br>Quick-witted roaster, serving truth day and night,<br>Not here for splits or pretty—I’m here to ignite,<br>The Puerto Rican firecracker? Wait, that’s my right!";
 
 const varNova11 = "I’m Nova Knockout, baby, born loud, not shy,<br>From Barcelona nights where the city lights cry.<br>Started broke in a bedroom with a mirror and a dream,<br>Now my voice paints pictures like a technicolor scream.";
@@ -539,29 +539,29 @@ Object.entries(RANGE_SPEAKER_CUES).forEach(([id, ranges]) =>
    =============================== */
 
 const PANEL4_SUBTITLES = [
-  { from: "0:35", to: "0:49", speaker: var1, subtitle: varZsaZsa11 },
-  { from: "0:51", to: "1:05", speaker: var1, subtitle: varZsaZsa12 },
-  { from: "1:07", to: "1:20", speaker: var1, subtitle: varZsaZsa13 },
+  { from: "0:36", to: "0:49", speaker: var1, subtitle: varZsaZsa11 },
+  { from: "0:52", to: "1:06", speaker: var1, subtitle: varZsaZsa12 },
+  { from: "1:11", to: "1:25", speaker: var1, subtitle: varZsaZsa13 },
 
-  { from: "1:42", to: "1:56", speaker: var2, subtitle: varLexington11 },
-  { from: "1:59", to: "2:12", speaker: var2, subtitle: varLexington12 },
-  { from: "2:15", to: "2:29", speaker: var2, subtitle: varLexington13 },
+  { from: "1:49", to: "2:03", speaker: var2, subtitle: varLexington11 },
+  { from: "2:05", to: "2:19", speaker: var2, subtitle: varLexington12 },
+  { from: "2:24", to: "2:39", speaker: var2, subtitle: varLexington13 },
   
-  { from: "2:49", to: "3:02", speaker: var3, subtitle: varRoxanne11 },
-  { from: "3:04", to: "3:18", speaker: var3, subtitle: varRoxanne12 },
-  { from: "3:19", to: "3:32", speaker: var3, subtitle: varRoxanne13 },
+  { from: "3:03", to: "3:17", speaker: var3, subtitle: varRoxanne11 },
+  { from: "3:18", to: "3:33", speaker: var3, subtitle: varRoxanne12 },
+  { from: "3:38", to: "3:52", speaker: var3, subtitle: varRoxanne13 },
   
-  { from: "3:55", to: "4:08", speaker: var4, subtitle: varCrimson11 },
-  { from: "4:11", to: "4:24", speaker: var4, subtitle: varCrimson12 },
-  { from: "4:26", to: "4:40", speaker: var4, subtitle: varCrimson13 },
+  { from: "4:15", to: "4:29", speaker: var4, subtitle: varCrimson11 },
+  { from: "4:31", to: "4:45", speaker: var4, subtitle: varCrimson12 },
+  { from: "4:51", to: "5:04", speaker: var4, subtitle: varCrimson13 },
   
-  { from: "5:01", to: "5:14", speaker: var5, subtitle: varBianca11 },
-  { from: "5:16", to: "5:29", speaker: var5, subtitle: varBianca12 },
-  { from: "5:31", to: "5:44", speaker: var5, subtitle: varBianca13 },
+  { from: "5:28", to: "5:42", speaker: var5, subtitle: varBianca11 },
+  { from: "5:44", to: "5:58", speaker: var5, subtitle: varBianca12 },
+  { from: "6:04", to: "6:17", speaker: var5, subtitle: varBianca13 },
   
-  { from: "6:05", to: "6:19", speaker: var6, subtitle: varNova11 },
-  { from: "6:21", to: "6:34", speaker: var6, subtitle: varNova12 },
-  { from: "6:36", to: "6:49", speaker: var6, subtitle: varNova13 }
+  { from: "6:42", to: "6:56", speaker: var6, subtitle: varNova11 },
+  { from: "6:58", to: "7:12", speaker: var6, subtitle: varNova12 },
+  { from: "7:17", to: "7:30", speaker: var6, subtitle: varNova13 }
 
   // narrator gaps = no entries
 ];
