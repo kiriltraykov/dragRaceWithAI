@@ -192,6 +192,16 @@ h1 {
 
 }
 
+#ZsaZsa_insert {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  border: 2px solid rgba(0, 0, 0, 0.5); /* light academic border */
+  border-color: #000080;
+  border-radius: 8px;
+  padding: 2vh 2vw;
+}
+
 #initialNote {
   background-color: #FFF8DC; /*#FFF8DC;*/ /*#FFE08F;*/
   border: 2px solid rgba(0, 0, 0, 0.5); /* light academic border */
@@ -482,6 +492,7 @@ p {
 
   /* ---------- Images & Tables ---------- */
 
+  #ZsaZsa_insert,
   #vvnames,
   #strikethroughnames,
   #newnames,
