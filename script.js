@@ -70,7 +70,7 @@ const varNova13 = "I'm broke with big plans and a billionaire tongue,<br>Turning
 
 const varNovaRateAQueen = "Her verse had bite and her AI sketch was unhinged chaos.<br>Zero chill, all threat — I'd pay to watch her implode the finale."
 
-	$('#ZsaZsa_insert').show();
+	$('#trailer').show();
 	$('#initialNote').show();
 	$('#aboutTheCreators, #documentHub').hide();
 	$('#podcastdiv').hide();
@@ -87,7 +87,7 @@ const varNovaRateAQueen = "Her verse had bite and her AI sketch was unhinged cha
 		    scrollToTop();
             $('.episode').removeClass('selected');
             $(this).addClass('selected');
-	        $('#ZsaZsa_insert').hide();
+	        $('#trailer').hide();
 		    $('#initialNote').hide();
 		    $('#podcastdiv').show();
 		    $('.episodePanel').hide();
@@ -113,7 +113,7 @@ const varNovaRateAQueen = "Her verse had bite and her AI sketch was unhinged cha
 		    scrollToTop();
 		    $('.episode').removeClass('selected');
             $(this).addClass('selected');
-		    $('#ZsaZsa_insert').hide();
+		    $('#trailer').hide();
 		    $('#initialNote').hide();
 		    $('#podcastdiv').show();
 		    $('.episodePanel').hide();
@@ -149,7 +149,7 @@ const varNovaRateAQueen = "Her verse had bite and her AI sketch was unhinged cha
 		    $('.episode').removeClass('selected');
             $(this).addClass('selected');
 		    $('#initialNote').hide();
-		    $('#ZsaZsa_insert').hide();
+		    $('#trailer').hide();
 		    $('#podcastdiv').show(); 
 		    $('.episodePanel').hide();
 		 	$('#panel3').show();
@@ -181,7 +181,7 @@ const varNovaRateAQueen = "Her verse had bite and her AI sketch was unhinged cha
 		    scrollToTop();
 		    $('.episode').removeClass('selected');
             $(this).addClass('selected');
-		    $('#ZsaZsa_insert').hide();
+		    $('#trailer').hide();
 		    $('#initialNote').hide(); 
 		    $('#podcastdiv').show();
 		    $('.episodePanel').hide();
@@ -215,7 +215,7 @@ const varNovaRateAQueen = "Her verse had bite and her AI sketch was unhinged cha
 		    scrollToTop();
 		    $('.episode').removeClass('selected');
             $(this).addClass('selected');
-		    $('#ZsaZsa_insert').hide();
+		    $('#trailer').hide();
 		    $('#initialNote').hide();
 		    $('#podcastdiv').show();
 		    $('.episodePanel').hide();
@@ -249,7 +249,7 @@ const varNovaRateAQueen = "Her verse had bite and her AI sketch was unhinged cha
 		    scrollToTop();
 		    $('.episode').removeClass('selected');
             $(this).addClass('selected');
-		    $('#ZsaZsa_insert').hide();
+		    $('#trailer').hide();
 		    $('#initialNote').hide();
 		    $('#podcastdiv').show();
 		    $('.episodePanel').hide();
@@ -283,7 +283,7 @@ const varNovaRateAQueen = "Her verse had bite and her AI sketch was unhinged cha
 		    scrollToTop();
 		    $('.episode').removeClass('selected');
             $(this).addClass('selected');
-		    $('#ZsaZsa_insert').hide();
+		    $('#trailer').hide();
 		    $('#initialNote').hide();
 		    $('#podcastdiv').show();
 		    $('.episodePanel').hide();
@@ -318,7 +318,7 @@ const varNovaRateAQueen = "Her verse had bite and her AI sketch was unhinged cha
 		    scrollToTop();
 		    $('.episode').removeClass('selected');
             $(this).addClass('selected');
-		    $('#ZsaZsa_insert').hide();
+		    $('#trailer').hide();
 		    $('#initialNote').hide(); 
 		    $('#podcastdiv').show();
 		    $('.episodePanel').hide();
@@ -353,7 +353,7 @@ const varNovaRateAQueen = "Her verse had bite and her AI sketch was unhinged cha
 		    scrollToTop();
 		    $('.episode').removeClass('selected');
 			$('#maindiv').hide(); 
-		    $('#ZsaZsa_insert').hide();
+		    $('#trailer').hide();
 		    $('#initialNote').hide(); 
 		    $('#podcastdiv').hide();
 		    $('.episodePanel').hide();
@@ -376,7 +376,7 @@ const varNovaRateAQueen = "Her verse had bite and her AI sketch was unhinged cha
 					        $('#documentHub, #aboutTheCreators').hide();
 					        $('#maindiv').show();
 					        $('.episode').removeClass('selected');
-					        $('#ZsaZsa_insert').show();
+					        $('#trailer').show();
 					        $('#initialNote').show();
 					        $('#podcastdiv').hide();
 	                        $('.episodePanel').hide();
@@ -407,7 +407,7 @@ const varNovaRateAQueen = "Her verse had bite and her AI sketch was unhinged cha
 					        $('#documentHub, #aboutTheCreators').hide();
 					        $('#maindiv').show();
 					        $('.episode').removeClass('selected');
-					        $('#ZsaZsa_insert').show();
+					        $('#trailer').show();
 					        $('#initialNote').show();
 					        $('#podcastdiv').hide();
 	                        $('.episodePanel').hide();
@@ -436,7 +436,7 @@ const varNovaRateAQueen = "Her verse had bite and her AI sketch was unhinged cha
 					        $('#documentHub, #aboutTheCreators').hide();
 					        $('#maindiv').show();
 					        $('.episode').removeClass('selected');
-					        $('#ZsaZsa_insert').show();
+					        $('#trailer').show();
 					        $('#initialNote').show();
 					        $('#podcastdiv').hide();
 	                        $('.episodePanel').hide();

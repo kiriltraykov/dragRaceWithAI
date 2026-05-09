@@ -182,8 +182,29 @@ h1 {
 	margin: 0;
 }
 
-.episode p:first-child {
+.episode p:first-of-type {
   font-weight: 600;
+}
+
+#episode5 {
+  position: relative;
+}
+
+.episodeBadge {
+  position: absolute;
+  top: -5px;
+  right: 12px;
+
+  background-color: #ffbf00;
+  color: #000;
+
+  font-size: 0.75rem;
+  padding: 4px 10px;
+
+  border-radius: 999px; /* makes it oval */
+  font-weight: 600;
+
+  box-shadow: 0 2px 4px rgba(0,0,0,0.2);
 }
 
 #rightdiv {
@@ -192,14 +213,27 @@ h1 {
 
 }
 
+#trailer {
+  text-align: center;
+  color: black;
+  background-color: white;
+  border: 2px solid rgba(0, 0, 0, 0.5); /* light academic border */
+  border-color: #000080;
+  border-radius: 8px;
+  padding: 2vh 2vw; 	
+}
+
+#trailertext {
+	margin-top: 0;
+}
+
 #ZsaZsa_insert {
   max-width: 100%;
   height: auto;
   display: block;
-  border: 2px solid rgba(0, 0, 0, 0.5); /* light academic border */
-  border-color: #000080;
   border-radius: 8px;
-  padding: 2vh 2vw;
+  border: 0.5px solid rgba(0, 0, 0, 0.5); /* light academic border */
+  border-color: grey;
 }
 
 #initialNote {
@@ -388,7 +422,7 @@ h3 {
 }
 
 p {
-  font-size: clamp(1.1rem, 4vw, 1.2rem);
+  font-size: clamp(1.0rem, 3vw, 1.1rem);
   line-height: normal;
 }
 
