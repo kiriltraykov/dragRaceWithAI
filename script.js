@@ -485,20 +485,20 @@ function setSubtitle(html) {
 
 const RANGE_SPEAKER_CUES = {
   panel2: [
-    { from: "0:08", to: "1:29", speaker: var7 },
+    { from: "0:08", to: "1:28", speaker: var7 },
     { from: "1:41", to: "3:02", speaker: var8 },
-	{ from: "3:13", to: "4:15", speaker: var9 },
-	{ from: "4:24", to: "5:13", speaker: var10 },
-	{ from: "5:26", to: "6:20", speaker: var5 },
-	{ from: "6:32", to: "6:58", speaker: var11 }
+	{ from: "3:12", to: "4:15", speaker: var9 },
+	{ from: "4:25", to: "5:12", speaker: var10 },
+	{ from: "5:23", to: "6:19", speaker: var5 },
+	{ from: "6:32", to: "6:57", speaker: var11 }
     // narrator gaps are implicit
   ],
   panel3: [
-    { from: "0:24", to: "1:53", speaker: var12 },
-    { from: "2:07", to: "3:18", speaker: var13 },
-	{ from: "3:30", to: "4:57", speaker: var14 },
-	{ from: "5:08", to: "5:56", speaker: var15 },
-	{ from: "6:08", to: "6:34", speaker: var16 }
+    { from: "0:32", to: "2:01", speaker: var12 },
+    { from: "2:15", to: "3:26", speaker: var13 },
+	{ from: "3:39", to: "5:04", speaker: var14 },
+	{ from: "5:16", to: "6:03", speaker: var15 },
+	{ from: "6:16", to: "6:41", speaker: var16 }
   ],
   panel5: [
     { from: "0:16", to: "2:22", speaker: var1 },
@@ -510,7 +510,7 @@ const RANGE_SPEAKER_CUES = {
   ],
   panel6: [
     { from: "0:11", to: "2:16", speaker: var1 },
-	{ from: "2:27", to: "4:33", speaker: var2 },
+	{ from: "2:28", to: "4:33", speaker: var2 },
 	{ from: "4:44", to: "7:45", speaker: var3 },
 	{ from: "7:55", to: "10:18", speaker: var4 },
 	{ from: "10:30", to: "14:13", speaker: var5 },
