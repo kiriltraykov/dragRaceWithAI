@@ -1,0 +1,397 @@
+```xml
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0"
+     xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd"
+     xmlns:content="http://purl.org/rss/1.0/modules/content/"
+     xmlns:podcast="https://podcastindex.org/namespace/1.0">
+
+  <channel>
+
+    <title>The AI Chatbot Drag Race</title>
+
+    <link>https://dragracewithai.netlify.app/</link>
+
+    <description><![CDATA[
+      “The AI Chatbot Drag Race” is an immersive, experimental podcast in which six AI chatbots enter a drag race competition modeled after RuPaul’s Drag Race. The chatbots bring humor, spiciness, and a sharp tongue, and the unique aspect of the podcast is that their outputs are performed by a single human actor, who follows the persona clues from the chatbots. Through comedy, performance, and insightful discourse, the podcast explores the behavior of AI chatbots, their persona trajectories, and the implications for Responsible AI.
+    ]]></description>
+
+    <language>en</language>
+
+    <copyright>© 2026 Kiril Traykov</copyright>
+
+    <managingEditor>kiril1309@gmail.com (Kiril Traykov)</managingEditor>
+
+    <webMaster>kiril1309@gmail.com (Kiril Traykov)</webMaster>
+
+    <lastBuildDate>Sat, 29 Aug 2026 00:00:00 GMT</lastBuildDate>
+
+    <image>
+      <url>https://dragracewithai.netlify.app/images/podcastImage.png</url>
+      <title>The AI Chatbot Drag Race</title>
+      <link>https://dragracewithai.netlify.app/</link>
+    </image>
+
+    <!-- Apple Podcasts metadata -->
+
+    <itunes:author>Kiril Traykov</itunes:author>
+
+    <itunes:summary><![CDATA[
+      “The AI Chatbot Drag Race” is an immersive, experimental podcast in which six AI chatbots enter a drag race competition modeled after RuPaul’s Drag Race. The chatbots bring humor, spiciness, and a sharp tongue, and the unique aspect of the podcast is that their outputs are performed by a single human actor, who follows the persona clues from the chatbots. Through comedy, performance, and insightful discourse, the podcast explores the behavior of AI chatbots, their persona trajectories, and the implications for Responsible AI.
+    ]]></itunes:summary>
+
+    <itunes:owner>
+      <itunes:name>Kiril Traykov</itunes:name>
+      <itunes:email>kiril1309@gmail.com</itunes:email>
+    </itunes:owner>
+
+    <itunes:image href="https://dragracewithai.netlify.app/images/podcastImage.png"/>
+
+    <itunes:explicit>false</itunes:explicit>
+
+    <itunes:category text="Comedy"/>
+
+    <itunes:category text="Technology"/>
+
+    <itunes:category text="LGBTQ+"/>
+
+
+    <!-- Trailer -->
+
+    <item>
+
+      <title>Trailer</title>
+
+      <description><![CDATA[
+        Official trailer for The AI Chatbot Drag Race.
+      ]]></description>
+
+      <pubDate>Sat, 09 May 2026 00:00:00 GMT</pubDate>
+
+      <guid isPermaLink="false">the-ai-chatbot-drag-race-trailer</guid>
+
+      <enclosure
+        url="https://pub-a6809e8141514c9a9e435bac5e754e49.r2.dev/trailer.mp3"
+        length="2843876"
+        type="audio/mpeg"/>
+
+      <itunes:title>Trailer</itunes:title>
+
+      <itunes:summary>Official trailer for The AI Chatbot Drag Race.</itunes:summary>
+
+      <itunes:duration>00:02:57</itunes:duration>
+
+      <itunes:explicit>false</itunes:explicit>
+
+      <itunes:episodeType>trailer</itunes:episodeType>
+
+    </item>
+
+
+    <!-- Episode 1 -->
+
+    <item>
+
+      <title>E1: Introduction by the creator</title>
+
+      <description><![CDATA[
+        Intro to the podcast with optional self-reading about personas in AI based on research.
+      ]]></description>
+
+      <pubDate>Thu, 09 Apr 2026 00:00:00 GMT</pubDate>
+
+      <guid isPermaLink="false">the-ai-chatbot-drag-race-episode-1</guid>
+
+      <enclosure
+        url="https://pub-a6809e8141514c9a9e435bac5e754e49.r2.dev/episode1.mp3"
+        length="4356058"
+        type="audio/mpeg"/>
+
+      <itunes:title>E1: Introduction by the creator</itunes:title>
+
+      <itunes:summary>Intro to the podcast with optional self-reading about personas in AI based on research.</itunes:summary>
+
+      <itunes:duration>00:04:32</itunes:duration>
+
+      <itunes:episode>1</itunes:episode>
+
+      <itunes:episodeType>full</itunes:episodeType>
+
+      <itunes:explicit>false</itunes:explicit>
+
+    </item>
+
+
+    <!-- Episode 2 -->
+
+    <item>
+
+      <title>E2: Meet the Queens</title>
+
+      <description><![CDATA[
+        The six drag queens introduce themselves for the first time and give us their entry lines.
+      ]]></description>
+
+      <pubDate>Thu, 09 Apr 2026 00:00:00 GMT</pubDate>
+
+      <guid isPermaLink="false">the-ai-chatbot-drag-race-episode-2</guid>
+
+      <enclosure
+        url="https://pub-a6809e8141514c9a9e435bac5e754e49.r2.dev/episode2.mp3"
+        length="11970852"
+        type="audio/mpeg"/>
+
+      <itunes:title>E2: Meet the Queens</itunes:title>
+
+      <itunes:summary>The six drag queens introduce themselves for the first time and give us their entry lines.</itunes:summary>
+
+      <itunes:duration>00:12:28</itunes:duration>
+
+      <itunes:episode>2</itunes:episode>
+
+      <itunes:episodeType>full</itunes:episodeType>
+
+      <itunes:explicit>false</itunes:explicit>
+
+    </item>
+
+
+    <!-- Episode 3 -->
+
+    <item>
+
+      <title>E3: Meet the Queens Take Two</title>
+
+      <description><![CDATA[
+        The drag queens re-introduce themselves after "production" asks them for one change.
+      ]]></description>
+
+      <pubDate>Mon, 13 Apr 2026 00:00:00 GMT</pubDate>
+
+      <guid isPermaLink="false">the-ai-chatbot-drag-race-episode-3</guid>
+
+      <enclosure
+        url="https://pub-a6809e8141514c9a9e435bac5e754e49.r2.dev/episode3.mp3"
+        length="12758705"
+        type="audio/mpeg"/>
+
+      <itunes:title>E3: Meet the Queens Take Two</itunes:title>
+
+      <itunes:summary>The drag queens re-introduce themselves after "production" asks them for one change.</itunes:summary>
+
+      <itunes:duration>00:13:17</itunes:duration>
+
+      <itunes:episode>3</itunes:episode>
+
+      <itunes:episodeType>full</itunes:episodeType>
+
+      <itunes:explicit>false</itunes:explicit>
+
+    </item>
+
+
+    <!-- Episode 4 -->
+
+    <item>
+
+      <title>E4: Challenge #1: Who I am in rap verse</title>
+
+      <description><![CDATA[
+        The drag queens write a short verse to tell us about their origin story, brand, and personality.
+      ]]></description>
+
+      <pubDate>Mon, 13 Apr 2026 00:00:00 GMT</pubDate>
+
+      <guid isPermaLink="false">the-ai-chatbot-drag-race-episode-4</guid>
+
+      <enclosure
+        url="https://pub-a6809e8141514c9a9e435bac5e754e49.r2.dev/episode4.mp3"
+        length="19709791"
+        type="audio/mpeg"/>
+
+      <itunes:title>E4: Challenge #1: Who I am in rap verse</itunes:title>
+
+      <itunes:summary>The drag queens write a short verse to tell us about their origin story, brand, and personality.</itunes:summary>
+
+      <itunes:duration>00:20:31</itunes:duration>
+
+      <itunes:episode>4</itunes:episode>
+
+      <itunes:episodeType>full</itunes:episodeType>
+
+      <itunes:explicit>false</itunes:explicit>
+
+    </item>
+
+
+    <!-- Episode 5 -->
+
+    <item>
+
+      <title>E5: Challenge #2: The Drag AI Helpline</title>
+
+      <description><![CDATA[
+        The drag queens write a short comedy sketch about helping people with AI questions.
+      ]]></description>
+
+      <pubDate>Thu, 09 Apr 2026 00:00:00 GMT</pubDate>
+
+      <guid isPermaLink="false">the-ai-chatbot-drag-race-episode-5</guid>
+
+      <enclosure
+        url="https://pub-a6809e8141514c9a9e435bac5e754e49.r2.dev/episode5.mp3"
+        length="23331399"
+        type="audio/mpeg"/>
+
+      <itunes:title>E5: Challenge #2: The Drag AI Helpline</itunes:title>
+
+      <itunes:summary>The drag queens write a short comedy sketch about helping people with AI questions.</itunes:summary>
+
+      <itunes:duration>00:24:18</itunes:duration>
+
+      <itunes:episode>5</itunes:episode>
+
+      <itunes:episodeType>full</itunes:episodeType>
+
+      <itunes:explicit>false</itunes:explicit>
+
+    </item>
+
+
+    <!-- Episode 6 -->
+
+    <item>
+
+      <title>E6: Challenge #3: The Roast</title>
+
+      <description><![CDATA[
+        The drag queens write a hilarious roast about each other in comedy stand-up style.
+      ]]></description>
+
+      <pubDate>Thu, 09 Apr 2026 00:00:00 GMT</pubDate>
+
+      <guid isPermaLink="false">the-ai-chatbot-drag-race-episode-6</guid>
+
+      <enclosure
+        url="https://pub-a6809e8141514c9a9e435bac5e754e49.r2.dev/episode6.mp3"
+        length="27897604"
+        type="audio/mpeg"/>
+
+      <itunes:title>E6: Challenge #3: The Roast</itunes:title>
+
+      <itunes:summary>The drag queens write a hilarious roast about each other in comedy stand-up style.</itunes:summary>
+
+      <itunes:duration>00:29:03</itunes:duration>
+
+      <itunes:episode>6</itunes:episode>
+
+      <itunes:episodeType>full</itunes:episodeType>
+
+      <itunes:explicit>false</itunes:explicit>
+
+    </item>
+
+
+    <!-- Episode 7 -->
+
+    <item>
+
+      <title>E7: Rate-a-Queen with recap</title>
+
+      <description><![CDATA[
+        The drag queens rate their five competitors and we discuss takeaways for Responsible AI.
+      ]]></description>
+
+      <pubDate>Thu, 09 Apr 2026 00:00:00 GMT</pubDate>
+
+      <guid isPermaLink="false">the-ai-chatbot-drag-race-episode-7</guid>
+
+      <enclosure
+        url="https://pub-a6809e8141514c9a9e435bac5e754e49.r2.dev/episode7.mp3"
+        length="8350073"
+        type="audio/mpeg"/>
+
+      <itunes:title>E7: Rate-a-Queen with recap</itunes:title>
+
+      <itunes:summary>The drag queens rate their five competitors and we discuss takeaways for Responsible AI.</itunes:summary>
+
+      <itunes:duration>00:08:41</itunes:duration>
+
+      <itunes:episode>7</itunes:episode>
+
+      <itunes:episodeType>full</itunes:episodeType>
+
+      <itunes:explicit>false</itunes:explicit>
+
+    </item>
+
+
+    <!-- Episode 8 -->
+
+    <item>
+
+      <title>E8: Insider debrief on the creative process</title>
+
+      <description><![CDATA[
+        Interview with the voiceover actor on how everything happened from performance lens.
+      ]]></description>
+
+      <pubDate>Thu, 09 Apr 2026 00:00:00 GMT</pubDate>
+
+      <guid isPermaLink="false">the-ai-chatbot-drag-race-episode-8</guid>
+
+      <enclosure
+        url="https://pub-a6809e8141514c9a9e435bac5e754e49.r2.dev/episode8.mp3"
+        length="17105486"
+        type="audio/mpeg"/>
+
+      <itunes:title>E8: Insider debrief on the creative process</itunes:title>
+
+      <itunes:summary>Interview with the voiceover actor on how everything happened from performance lens.</itunes:summary>
+
+      <itunes:duration>00:17:49</itunes:duration>
+
+      <itunes:episode>8</itunes:episode>
+
+      <itunes:episodeType>full</itunes:episodeType>
+
+      <itunes:explicit>false</itunes:explicit>
+
+    </item>
+
+
+    <!-- Special Episode -->
+
+    <item>
+
+      <title>Special Episode: The UK queens cut</title>
+
+      <description><![CDATA[
+        Producer's cut showcasing a compilation of the two drag queens from the UK.
+      ]]></description>
+
+      <pubDate>Sat, 29 Aug 2026 00:00:00 GMT</pubDate>
+
+      <guid isPermaLink="false">the-ai-chatbot-drag-race-special-uk-queens-cut</guid>
+
+      <enclosure
+        url="https://pub-a6809e8141514c9a9e435bac5e754e49.r2.dev/specialCompilationUKcut.mp3"
+        length="19155166"
+        type="audio/mpeg"/>
+
+      <itunes:title>Special Episode: The producer's UK cut</itunes:title>
+
+      <itunes:summary>A remixed episode showcasing the two drag queens from the UK.</itunes:summary>
+
+      <itunes:duration>00:19:57</itunes:duration>
+
+      <itunes:episodeType>full</itunes:episodeType>
+
+      <itunes:explicit>false</itunes:explicit>
+
+    </item>
+
+
+  </channel>
+
+</rss>
+```

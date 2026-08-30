@@ -347,6 +347,33 @@ const varNovaRateAQueen = "Her verse had bite and her AI sketch was unhinged cha
 		        });
 		 
 		});
+
+	$('#episodeUK').on('click', function(){
+		    stopAllAudio();
+		    scrollToTop();
+		    $('.episode').removeClass('selected');
+            $(this).addClass('selected');
+		    $('#trailer').hide();
+		    $('#initialNote').hide(); 
+		    $('#podcastdiv').show();
+		    $('.episodePanel').hide();
+		 	$('#panelUK').show();
+		    $('.queenIsSpeaking').hide();
+		    $('#whichQueenIsSpeaking').text(var0);
+		    $('#showQueenCheatSheet').hide();
+			$('#showQueenRankings').hide();
+		    $('#vvnames').hide();
+		   	$('#strikethroughnames').hide();
+		    $('#newnames').hide(); 
+		    $('#rateaqueen').hide();
+		    $('#infoOnResearch').hide();
+		    $('#infoOnResponses').hide();
+		    $('#infoOnRateAQueen').hide();
+		    $('#infoConclusion').hide();
+		    $('#disclaimer').hide();
+		    $('#wordArtSection').hide();
+		 
+		});
   
   	$('#bonusUntokened').on('click', function(){
 		    stopAllAudio();
