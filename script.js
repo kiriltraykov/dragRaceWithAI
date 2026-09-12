@@ -81,6 +81,7 @@ const varNovaRateAQueen = "Her verse had bite and her AI sketch was unhinged cha
     $('#infoOnResearch, #infoOnResponses, #infoOnRateAQueen, #infoConclusion').hide();
     $('#disclaimer').hide();
     $('#wordArtSection').hide();
+    $('#listenElsewhere').show();
 	
 	 $('#episode1').on('click', function(){
 		    stopAllAudio();
@@ -106,6 +107,7 @@ const varNovaRateAQueen = "Her verse had bite and her AI sketch was unhinged cha
 		    $('#infoConclusion').hide();
 		    $('#disclaimer').hide();
 		    $('#wordArtSection').hide();
+		    $('#listenElsewhere').show();
 		});
 	
      $('#episode2').on('click', function(){
@@ -131,6 +133,7 @@ const varNovaRateAQueen = "Her verse had bite and her AI sketch was unhinged cha
 		    $('#infoConclusion').hide();
 		    $('#disclaimer').show();
 		    $('#wordArtSection').hide();
+		    $('#listenElsewhere').show();
 		    
 		 		$('#showQueenCheatSheet').off('click').on('click', function(){
 		     			    $('#showQueenCheatSheet').hide();
@@ -166,6 +169,7 @@ const varNovaRateAQueen = "Her verse had bite and her AI sketch was unhinged cha
 		    $('#infoConclusion').hide();
 		    $('#disclaimer').show();
 		    $('#wordArtSection').hide();
+		    $('#listenElsewhere').show();
 		    
 		 		$('#showQueenCheatSheet').off('click').on('click', function(){
 		   			        $('#showQueenCheatSheet').hide();$('#vvnames').hide();
@@ -199,6 +203,7 @@ const varNovaRateAQueen = "Her verse had bite and her AI sketch was unhinged cha
 		    $('#infoConclusion').hide();
 		    $('#disclaimer').show();
 		    $('#wordArtSection').hide();
+		    $('#listenElsewhere').show();
 		    
 		 		$('#showQueenCheatSheet').off('click').on('click', function(){
 		     	            $('#showQueenCheatSheet').hide();
@@ -233,6 +238,7 @@ const varNovaRateAQueen = "Her verse had bite and her AI sketch was unhinged cha
 		    $('#infoConclusion').hide();
 		    $('#disclaimer').show();
 		    $('#wordArtSection').hide();
+		    $('#listenElsewhere').show();
 		    
 		 		$('#showQueenCheatSheet').off('click').on('click', function(){
 		                    $('#showQueenCheatSheet').hide();
@@ -267,6 +273,7 @@ const varNovaRateAQueen = "Her verse had bite and her AI sketch was unhinged cha
 		    $('#infoConclusion').hide();
 		    $('#disclaimer').show();
 		    $('#wordArtSection').hide();
+		    $('#listenElsewhere').show();
 		    
 		 		$('#showQueenCheatSheet').off('click').on('click', function(){
 		                    $('#showQueenCheatSheet').hide();
@@ -302,6 +309,7 @@ const varNovaRateAQueen = "Her verse had bite and her AI sketch was unhinged cha
 		    $('#infoConclusion').hide();
 		    $('#disclaimer').show();
 		    $('#wordArtSection').hide();
+		    $('#listenElsewhere').show();
 		
 				$('#showQueenRankings').off('click').on('click', function(){
 		                    $('#showQueenRankings').hide();
@@ -337,6 +345,7 @@ const varNovaRateAQueen = "Her verse had bite and her AI sketch was unhinged cha
 		    $('#infoConclusion').show();
 		    $('#disclaimer').show();
 		    $('#wordArtSection').hide();
+		    $('#listenElsewhere').show();
 		
 			      $('#showQueenCheatSheet').off('click').on('click', function(){
 		                    $('#showQueenCheatSheet').hide();
@@ -372,6 +381,7 @@ const varNovaRateAQueen = "Her verse had bite and her AI sketch was unhinged cha
 		    $('#infoConclusion').hide();
 		    $('#disclaimer').hide();
 		    $('#wordArtSection').hide();
+		    $('#listenElsewhere').show();
 		 
 		});
   
@@ -397,6 +407,7 @@ const varNovaRateAQueen = "Her verse had bite and her AI sketch was unhinged cha
 		    $('#infoConclusion').hide();
 		    $('#disclaimer').hide();
 		    $('#wordArtSection').show();
+		    $('#listenElsewhere').hide();
 		
 			      $('#backtopodcast3').off('click').on('click', function(){
 					        stopAllAudio();
@@ -413,6 +424,7 @@ const varNovaRateAQueen = "Her verse had bite and her AI sketch was unhinged cha
 					        $('#infoOnResearch, #infoOnResponses, #infoOnRateAQueen, #infoConclusion').hide();
 					        $('#disclaimer').hide();
 					        $('#wordArtSection').hide();
+					        $('#listenElsewhere').show();
 					  			  
 		              });
 		 
@@ -428,6 +440,7 @@ const varNovaRateAQueen = "Her verse had bite and her AI sketch was unhinged cha
 			                $('#aboutTheCreators').hide();
 		                    $('#documentHub').show();
 			                $('#wordArtSection').hide();
+			                $('#listenElsewhere').hide();
 			   
 			      $('#backtopodcast').off('click').on('click', function(){
 					        stopAllAudio();
@@ -444,6 +457,7 @@ const varNovaRateAQueen = "Her verse had bite and her AI sketch was unhinged cha
 					        $('#infoOnResearch, #infoOnResponses, #infoOnRateAQueen, #infoConclusion').hide();
 					        $('#disclaimer').hide();
 					        $('#wordArtSection').hide();
+					        $('#listenElsewhere').show();
 
 		              });
 		        });
@@ -456,7 +470,8 @@ const varNovaRateAQueen = "Her verse had bite and her AI sketch was unhinged cha
                             $('.episodePanel').hide();
 			                $('.queenIsSpeaking').hide();
 			                $('#aboutTheCreators').show();
-		                    $('#documentHub').hide(); 
+		                    $('#documentHub').hide();
+			                $('#listenElsewhere').hide();
 			   
 			      $('#backtopodcast2').off('click').on('click', function(){
 					        stopAllAudio();
@@ -473,6 +488,7 @@ const varNovaRateAQueen = "Her verse had bite and her AI sketch was unhinged cha
 					        $('#infoOnResearch, #infoOnResponses, #infoOnRateAQueen, #infoConclusion').hide();
 					        $('#disclaimer').hide();
 					        $('#wordArtSection').hide();
+					        $('#listenElsewhere').show();
 		              });
 		        });
 
