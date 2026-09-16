@@ -72,7 +72,7 @@ const varNovaRateAQueen = "Her verse had bite and her AI sketch was unhinged cha
 
 	$('#trailer').show();
 	$('#initialNote').show();
-	$('#aboutTheCreators, #documentHub').hide();
+	$('#faqs, #aboutTheCreators, #documentHub').hide();
 	$('#podcastdiv').hide();
 	$('.episodePanel').hide();
     $('.queenIsSpeaking').hide();
@@ -411,7 +411,7 @@ const varNovaRateAQueen = "Her verse had bite and her AI sketch was unhinged cha
 		
 			      $('#backtopodcast3').off('click').on('click', function(){
 					        stopAllAudio();
-					        $('#documentHub, #aboutTheCreators').hide();
+					        $('#faqs, #documentHub, #aboutTheCreators').hide();
 					        $('#maindiv').show();
 					        $('.episode').removeClass('selected');
 					        $('#trailer').show();
@@ -429,6 +429,37 @@ const varNovaRateAQueen = "Her verse had bite and her AI sketch was unhinged cha
 		              });
 		 
 		});
+
+                  $('#faqsp').on('click', function(){
+			                stopAllAudio();
+			                $('.episode').removeClass('selected');
+			                $('#maindiv').hide();
+			                $('#podcastdiv').hide();
+                            $('.episodePanel').hide();
+			                $('.queenIsSpeaking').hide();
+			                $('#faqs').show();
+					        $('#aboutTheCreators').hide();
+		                    $('#documentHub').hide();
+			                $('#listenElsewhere').hide();
+			   
+			      $('#backtopodcast4').off('click').on('click', function(){
+					        stopAllAudio();
+					        $('#faqs, #documentHub, #aboutTheCreators').hide();
+					        $('#maindiv').show();
+					        $('.episode').removeClass('selected');
+					        $('#trailer').show();
+					        $('#initialNote').show();
+					        $('#podcastdiv').hide();
+	                        $('.episodePanel').hide();
+					        $('.queenIsSpeaking').hide();  
+	                        $('#showQueenCheatSheet, #showQueenRankings').hide();
+						    $('#vvnames, #strikethroughnames, #newnames, #rateaqueen').hide();
+					        $('#infoOnResearch, #infoOnResponses, #infoOnRateAQueen, #infoConclusion').hide();
+					        $('#disclaimer').hide();
+					        $('#wordArtSection').hide();
+					        $('#listenElsewhere').show();
+		              });
+		        });
 	   
 	       $('#documentp').on('click', function(){
 			                stopAllAudio();
@@ -437,6 +468,7 @@ const varNovaRateAQueen = "Her verse had bite and her AI sketch was unhinged cha
                             $('#podcastdiv').hide();
                             $('.episodePanel').hide();
 			                $('.queenIsSpeaking').hide();
+			                $('#faqs').hide();
 			                $('#aboutTheCreators').hide();
 		                    $('#documentHub').show();
 			                $('#wordArtSection').hide();
@@ -444,7 +476,7 @@ const varNovaRateAQueen = "Her verse had bite and her AI sketch was unhinged cha
 			   
 			      $('#backtopodcast').off('click').on('click', function(){
 					        stopAllAudio();
-					        $('#documentHub, #aboutTheCreators').hide();
+					        $('#faqs, #documentHub, #aboutTheCreators').hide();
 					        $('#maindiv').show();
 					        $('.episode').removeClass('selected');
 					        $('#trailer').show();
@@ -469,13 +501,14 @@ const varNovaRateAQueen = "Her verse had bite and her AI sketch was unhinged cha
 			                $('#podcastdiv').hide();
                             $('.episodePanel').hide();
 			                $('.queenIsSpeaking').hide();
+			                $('#faqs').hide();
 			                $('#aboutTheCreators').show();
 		                    $('#documentHub').hide();
 			                $('#listenElsewhere').hide();
 			   
 			      $('#backtopodcast2').off('click').on('click', function(){
 					        stopAllAudio();
-					        $('#documentHub, #aboutTheCreators').hide();
+					        $(' #faqs, #documentHub, #aboutTheCreators').hide();
 					        $('#maindiv').show();
 					        $('.episode').removeClass('selected');
 					        $('#trailer').show();

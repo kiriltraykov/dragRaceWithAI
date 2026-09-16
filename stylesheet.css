@@ -247,10 +247,6 @@ h1 {
   gap: 1.5vh;	
 }
 
-#firstp, #secondp {
-	margin-bottom: 0;
-}
-
 #podcastdiv {
   background-color: #FFF8DC; /*#FFF8DC;*/ /*#FFE08F;*/
   border: 2px solid rgba(0, 0, 0, 0.5); /* light academic border */
@@ -278,7 +274,7 @@ h1 {
   width: 100%; 
 }
 
-#showQueenCheatSheet, #showQueenRankings, #backtopodcast, #backtopodcast2, #backtopodcast3 {
+#showQueenCheatSheet, #showQueenRankings, #backtopodcast, #backtopodcast2, #backtopodcast3, #backtopodcast4 {
   -webkit-appearance: none;
   appearance: none;
   border: 2px solid #000;
@@ -293,7 +289,7 @@ h1 {
 	margin-bottom: 20px;
 }
 
-#backtopodcast, #backtopodcast2, #backtopodcast3 {
+#backtopodcast, #backtopodcast2, #backtopodcast3, #backtopodcast4 {
 	margin-bottom: 0;
 	margin-top: 20px;
 	background-color: #ffbf00;
@@ -304,7 +300,7 @@ h1 {
 	transition: background-color 0.25s ease;
 }
 
-#backtopodcast:hover, #backtopodcast2:hover, #backtopodcast3:hover {
+#backtopodcast:hover, #backtopodcast2:hover, #backtopodcast3:hover, #backtopodcast4:hover {
     background-color: #FFF8DC;
 	transition: background-color 0.25s ease;
 }
@@ -651,7 +647,8 @@ p {
   
   #backtopodcast,
   #backtopodcast2,
-  #backtopodcast3 {
+  #backtopodcast3,
+  #backtopodcast4 {
     width: 100%;
     font-size: clamp(1rem, 4vw, 1.1rem);
     padding: 12px 20px;
